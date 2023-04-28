@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Bird</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap');
+    </style>
+    <link rel="stylesheet" href="./css/stylesheet.css">
+</head>
+
+
+<body>
+
+    <audio id="sound" autoplay>
+        <source src="./sounds/cumbia.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="sound-crash" autoplay>
+        <source src="./sounds/crash.mp3" type="audio/mpeg">
+    </audio>
+
+    <canvas class="myCanvas" id="myCanvas"></canvas>
+
+    <div class="container">
+        <h1>Flappy Hacker</h1>
+        <h2 class="press-space">Press SPACE to Start game</h2>
+
+        <div id="score-container" class="score-container hidden ">
+            <h3>Score</h3>
+            <p class="score" id="score">0</p>
+        </div>
+
+        <div id="form-container" class="">
+            <a id="btn" class="hidden2" onclick="location.reload()" href="#">
+                <p class="btn">Play Again</p>
+            </a>
+        </div>
+
+        <footer>
+            <p>Created by Manuel & Sergio</p>
+        </footer>
+    </div>
+
+
+    <script src="src/background.js"></script>
+    <script src="src/bird.js"></script>
+    <script src="src/pipeline.js"></script>
+    <script src="src/powerup.js"></script>
+    <script src="src/powerdown.js"></script>
+    <script src="src/game.js"></script>
+    <script src="src/index.js"></script>
+
+</body>
+
+</html>
